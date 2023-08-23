@@ -1,3 +1,3 @@
 # Chuck Norris Facts - React
 
-Para ver o projeto funcionando, [https://chuckreact.netlify.app] clique aqui
+Para ver o projeto funcionando, acesse: [https://chuckreact.netlify.app]
