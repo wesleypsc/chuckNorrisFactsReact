@@ -1,0 +1,90 @@
+:root{
+  --btnRandom-bg-color: #320064;
+  --btnSearch-bg-color: #ee5a24;
+  --btnLucky-bg-color: rgb(10, 161, 10);
+  --bg-input: #888;
+}
+
+.light{
+  --btnRandom-bg-color: #88538a;
+  --bg-input: #eee;
+}
+
+main{
+  max-width: 90%;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  gap: 20px;
+}
+
+.chuckNorrisLogo{
+  width: 256px;
+  max-width: 80%;
+}
+
+.btnRandom{
+  width: 100%;
+  background: var(--btnRandom-bg-color);
+  color: #fff
+}
+
+.searchBox{
+  width: 500px;
+  max-width: 90%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.searchBox input{
+  font-family: inherit;
+  flex-grow: 1;
+  border: none;
+  border-radius: 10px;
+  color: var(--text-color);
+
+  background: var(--bg-input);
+  padding: 10px 20px;
+}
+
+.searchBox input::placeholder{
+  color: inherit;
+  opacity: 0.5
+}
+
+.searchBox .btnSearch{
+  background: var(--btnSearch-bg-color);
+  color: #fff
+}
+
+.searchBox .btnLucky{
+  background: var(--btnLucky-bg-color);
+  color: #fff
+}
+
+@media(max-width:767px){
+  .searchBox{
+    /* flex-direction: column; */
+  }
+
+  .searchBox input{
+    height: 24px;
+  }
+
+  .searchBox .btnSearch, 
+  .searchBox .btnLucky{
+    width: 40%;
+    flex-grow: 1;
+  }
+
+  .searchBox .btnRandom{
+    margin-top: 10px;
+  }
+}

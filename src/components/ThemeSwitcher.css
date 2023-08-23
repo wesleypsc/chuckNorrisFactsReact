@@ -1,0 +1,47 @@
+:root{
+    --switch-bg-url: url(../assets/moon-stars.svg);
+}
+
+.light{
+    --switch-bg-url: url(../assets/sun.svg);
+}
+
+.theme-switcher {
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    margin: 4px auto;
+    width: 64px;
+}
+
+
+.theme-switcher button {
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    background: #e8e8e8 var(--switch-bg-url) no-repeat center;
+    border: 0;
+    border-radius: 1000px;
+}
+
+.theme-switcher button:hover {
+    outline: 8px solid var(--highlight-color);
+}
+
+.light .theme-switcher button {
+    animation: slideOn 0.4s forwards;
+}
+
+.theme-switcher span {
+    display: block;
+
+    width: 64px;
+    height: 24px;
+
+    background: var(--surface-color);
+    border: 1px solid var(--stroke-color);
+    border-radius: 999px;
+
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}

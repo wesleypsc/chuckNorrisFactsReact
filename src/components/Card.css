@@ -1,0 +1,23 @@
+.jokeCard{
+    width: 800px;
+    max-width: 90%;
+
+    padding: 36px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.jokeCard a{
+    color: #aaa;
+    transition: opacity .2s;
+}
+
+.jokeCard a:hover{
+    opacity: .8;
+}
