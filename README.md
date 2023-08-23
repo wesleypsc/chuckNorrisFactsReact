@@ -1,4 +1,5 @@
-# Chuck Norris Facts - Criado com ReactJS e utilizando a [Chuck Norris Jokes API](https://api.chucknorris.io/)
+# Chuck Norris Facts
+### Criado com ReactJS e utilizando a [Chuck Norris Jokes API](https://api.chucknorris.io/)
 
 **_Projeto criado como fonte de estudo_**
 
